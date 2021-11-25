@@ -1,0 +1,127 @@
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm');
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, sans-serif;
+}
+header {
+  background-color: white;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7%;
+  align-items: center;
+}
+header .search{
+    position:relative;
+}
+.search .fa {
+    position: absolute;
+    top: 0.4rem;
+    left: 10rem;
+}
+.search input{
+    border-radius: 12px;
+    border:none;
+    padding:7px 7px;
+    background-color: #E5E6EC;
+    font-weight: bold;
+}
+main{
+    height: 100vh;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    background: rgb(173,163,247);
+    background: linear-gradient(90deg, rgba(173,163,247,1) 0%, rgba(178,235,240,1) 100%);
+}
+main .profile-info{
+    background-color: white;
+    max-width: 18rem;
+    max-height: 10rem; 
+    display: flex;
+    flex-direction: column; 
+}
+main .profile-info img{
+   max-width: 30%;
+   border-radius: 50%;   
+}
+main .profile-info .pic-name{
+ display: flex;
+ flex-direction: column;
+ align-items: center;   
+}
+main .profile-info .pic-name h2{
+    font-size: 100%;
+}
+main .profile-info .user-actions-exit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:5%;
+    background-color: #F6F7FD; 
+}
+main .profile-info .actions{
+    display: flex;
+    align-items: column;
+}
+main .profile-info .action-number{
+    padding-left:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main .profile-info .action-number p{
+    margin: 3px;
+    font-size: 12px;
+    color: #A2A4AF;
+    font-weight: bold;
+}
+main .profile-info .action-number .num{
+    font-size: 13px;
+    color: #69C5DB;
+}
+main .profile-info button{
+    color: #69C5DB;
+    border:2px solid #69C5DB;
+    background-color: #F6F7FD;
+    border-radius: 15px; 
+    padding:5px;  
+    font-weight: bold;
+}
+main .posts{
+    max-width: 55rem;
+}
+main .posts header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:10px;
+    background-color: #F6F7FD;
+}
+main .posts header img{
+    max-width: 5%;
+    border-radius: 50%;
+}
+main .posts header .post{
+    width:25rem;
+    color:#69C5DB;
+}
+.post .fa {
+    position: absolute;
+    top: 0.4rem;
+    left: 23rem;
+}
+main .posts header input{
+    margin-left:20px;
+    width:100%;
+    color: #69C5DB;
+    box-shadow: 0px 0px 5px 1px lightgray;
+    background-color: white;
+}

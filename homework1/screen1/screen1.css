@@ -1,0 +1,59 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    font-size: 16px;
+    background: rgb(173,163,247);
+    background: linear-gradient(90deg, rgba(173,163,247,1) 0%, rgba(178,235,240,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.flutter{
+    margin-top:  100px;
+    background-color: #FFFFFF;
+    max-width: 32rem;
+    width: 90%;
+    padding: 2.5rem;
+    border-radius:  8px;
+}
+.flutter .title{
+    font-size: 32px;
+    margin:0px;
+}
+.flutter .login{
+    color:#848694;
+    margin-bottom: 50px;
+}
+.flutter input{
+   border:none;
+   border-bottom: 2px solid lightgray;
+   width: 90%;
+   padding-bottom:8px;
+   padding-top: 8px;
+}
+.flutter input:focus{
+    border:none;
+    outline: none;
+    border-bottom: 2px solid #99A2EC;
+}
+.flutter button, .flutter a {
+    display: block;
+}
+.flutter .float-right{
+    float: right;
+    margin-top: 50px;
+}
+.flutter button{
+    border: none;
+    max-width: 10rem;
+    padding: 5px 30px;
+    border-radius: 12px;
+    background-color: #54BDD6;
+    color: white;
+}
+.flutter a{
+    margin-top:25px;
+    text-decoration: none;
+}
