@@ -15,7 +15,7 @@
         <input placeholder="Search" />
       </div>
     </header>
-    <main>
+    <main class="gradientBackgroundMain">
       <article class="profile-info">
         <section class="pic-name">
           <img
@@ -24,7 +24,7 @@
           />
           <h2>Martin Hristov</h2>
         </section>
-        <section class="user-actions-exit">
+        <section class="user-actions">
           <div class="actions">
             <div class="action-number">
               <p>Posts</p>
@@ -35,21 +35,42 @@
               <p class="num">7</p>
             </div>
           </div>
-          <button>Log Out</button>
+          <a href="../screen1/screen1.html">Log Out</a>
         </section>
       </article>
       <article class="posts">
         <header>
           <img src="../assets/picture.jpg" alt="">
-          <div class="search post">
-            <span class="fa fa-comment-o"></span>
+          <div class="post-something">
+            <i class="far fa-comment-alt"></i>
             <input placeholder="Say something" />
           </div>
         </header>
         <main>
           <article class="user-post">
-            <!-- to do -->
+              <img src="../assets/picture.jpg" alt=""> 
+              <div>
+                <p class="name">Ivan Ivanov <span><i class="fas fa-circle"></i> seconds ago</span></p>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi doloremque non enim nihil quaerat harum cum! Alias modi veritatis asperiores molestiae, exercitationem, fugit cum facilis ut quo, rem assumenda. At! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ab beatae esse autem aliquam sunt voluptas ullam amet in sapiente ad accusamus, quis doloribus numquam porro optio error blanditiis quos!</p>
+                 <section class="likes">
+                   <button><i class="far fa-thumbs-up"></i>5</button>
+                   <button><i class="far fa-thumbs-down"></i>3</button>
+                 </section>
+              </div>
+              <i class="fas fa-times"></i>         
           </article>
+          <article class="user-post">
+              <img src="../assets/picture.jpg" alt=""> 
+            <div>
+              <p class="name">Martin <span><i class="fas fa-circle"></i> Last month</span></p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere eius nesciunt impedit veritatis, explicabo numquam placeat soluta rerum nemo, repellat inventore omnis consequatur iste qui corporis asperiores delectus corrupti pariatur?</p>
+              <section class="likes">
+                 <button><i class="far fa-thumbs-up"></i>3</button>
+                 <button><i class="far fa-thumbs-down"></i>0</button>
+               </section>
+            </div>       
+            <i class="fas fa-times"></i>    
+        </article>
         </main>
       </article>
     </main>

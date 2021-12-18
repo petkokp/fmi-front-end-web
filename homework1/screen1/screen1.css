@@ -22,30 +22,38 @@ body{
     font-size: 32px;
     margin:0px;
 }
+.flutter input{
+    border:none;
+    border-bottom: 2px solid lightgray;
+    width: 90%;
+    padding-bottom:8px;
+    padding-top: 8px;
+ }
 .flutter .login{
     color:#848694;
     margin-bottom: 50px;
-}
-.flutter input{
-   border:none;
-   border-bottom: 2px solid lightgray;
-   width: 90%;
-   padding-bottom:8px;
-   padding-top: 8px;
 }
 .flutter input:focus{
     border:none;
     outline: none;
     border-bottom: 2px solid #99A2EC;
 }
-.flutter button, .flutter a {
-    display: block;
-}
 .flutter .float-right{
     float: right;
     margin-top: 50px;
 }
+.flutter button, .flutter a {
+    display: block;
+}
 .flutter button{
+    border: none;
+    max-width: 10rem;
+    padding: 5px 30px;
+    border-radius: 12px;
+    background-color: #54BDD6;
+    color: white;
+}
+.flutter .submit {
     border: none;
     max-width: 10rem;
     padding: 5px 30px;

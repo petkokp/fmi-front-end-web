@@ -1,4 +1,4 @@
-@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm');
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 *,
@@ -11,117 +11,285 @@ body {
 }
 header {
   background-color: white;
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 7%;
   align-items: center;
 }
-header .search{
-    position:relative;
+header .search {
+  position: relative;
+}
+header h1 {
+  font-weight: lighter;
 }
 .search .fa {
-    position: absolute;
-    top: 0.4rem;
-    left: 10rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 10rem;
 }
-.search input{
-    border-radius: 12px;
-    border:none;
-    padding:7px 7px;
-    background-color: #E5E6EC;
-    font-weight: bold;
+.search input {
+  border-radius: 12px;
+  border: none;
+  padding: 7px 7px;
+  background-color: #e5e6ec;
+  font-weight: bold;
 }
-main{
-    height: 100vh;
-    padding:10px;
+.gradientBackgroundMain {
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgb(173, 163, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(173, 163, 247, 1) 0%,
+    rgba(178, 235, 240, 1) 100%
+  );
+}
+.gradientBackgroundMain .profile-info {
+  background-color: white;
+  max-width: 18rem;
+  max-height: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+main .profile-info img {
+  max-width: 30%;
+  border-radius: 50%;
+}
+main .profile-info .pic-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+main .profile-info .pic-name h2 {
+  font-size: 100%;
+}
+main .profile-info .user-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  background-color: #f6f7fd;
+}
+
+main .profile-info .user-actions a {
+  color: #69c5db;
+  border: 2px solid #69c5db;
+  background-color: #f6f7fd;
+  border-radius: 15px;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 2rem;
+}
+
+main .profile-info .actions {
+  display: flex;
+  align-items: column;
+}
+main .profile-info .action-number {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .profile-info .action-number p {
+  margin: 3px;
+  font-size: 12px;
+  color: #a2a4af;
+  font-weight: bold;
+}
+main .profile-info button {
+  color: #69c5db;
+  border: 2px solid #69c5db;
+  background-color: #f6f7fd;
+  border-radius: 15px;
+  padding: 5px;
+  font-weight: bold;
+}
+main .profile-info .action-number .num {
+  font-size: 13px;
+  color: #69c5db;
+}
+main .posts {
+  max-width: 55rem;
+}
+main .posts header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f6f7fd;
+}
+main .posts header img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+}
+.posts {
+  margin-left: 10px;
+}
+.gradientBackgroundMain main .user-post {
+  display: flex;
+  display: row;
+  background-color: white;
+}
+.user-post {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  border-top: 2px solid lightgray;
+}
+.user-post div {
+  max-width: 70%;
+}
+.user-post img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0 3%;
+}
+.user-post .fa-times {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  color: #a2a4af;
+}
+.user-post .name {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.user-post div .name {
+  font-weight: bold;
+}
+.user-post div span {
+  color: gray;
+}
+.user-post div .fa-circle {
+  font-size: 1%;
+  vertical-align: middle;
+}
+.user-post .likes button {
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  margin: 1%;
+}
+.posts .post-something input {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 5px 1px lightgray;
+  margin-left: 20px;
+  border-radius: 16px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+}
+.posts .post-something {
+  position: relative;
+  width: 80%;
+}
+.posts .post-something input::placeholder {
+  color: #69c5db;
+}
+.posts .post-something i {
+  position: absolute;
+  top: 11px;
+  right: 1px;
+  font-size: 1.2rem;
+  color: #69c5db;
+}
+
+@media all and (max-width: 890px) {
+  header {
     display: flex;
-    flex-direction: row;
-    background: rgb(173,163,247);
-    background: linear-gradient(90deg, rgba(173,163,247,1) 0%, rgba(178,235,240,1) 100%);
-}
-main .profile-info{
-    background-color: white;
-    max-width: 18rem;
-    max-height: 10rem; 
+    align-items: flex-end;
+    padding: 5px;
+    justify-content: center;
+  }
+  header h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+  }
+  .gradientBackgroundMain {
     display: flex;
-    flex-direction: column; 
-}
-main .profile-info img{
-   max-width: 30%;
-   border-radius: 50%;   
-}
-main .profile-info .pic-name{
- display: flex;
- flex-direction: column;
- align-items: center;   
-}
-main .profile-info .pic-name h2{
-    font-size: 100%;
-}
-main .profile-info .user-actions-exit{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    padding:5%;
-    background-color: #F6F7FD; 
-}
-main .profile-info .actions{
+    height: max-content;
+  }
+  .gradientBackgroundMain .profile-info,
+  .gradientBackgroundMain .posts {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  .gradientBackgroundMain .profile-info {
+    width: 90%;
+  }
+  .gradientBackgroundMain .profile-info {
+    background-color: white;
     display: flex;
-    align-items: column;
-}
-main .profile-info .action-number{
-    padding-left:5%;
+    flex-direction: column;
+  }
+  main .profile-info img {
+    max-width: 100%;
+    width: 5.25rem;
+    height: 5.25rem;
+  }
+  main .profile-info .actions {
+    height: 3.75rem;
+  }
+  main .profile-info .action-number {
+    padding-left: 5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-main .profile-info .action-number p{
-    margin: 3px;
+  }
+  main .profile-info .action-number p:first-child {
+    font-size: 0.75rem;
+  }
+  main .profile-info .action-number p:last-child {
+    font-size: 1.125rem;
+  }
+  main .profile-info button {
+    height: 2rem;
+  }
+  .posts {
+    margin-left: 0px;
+  }
+  .posts .post-something input {
+    width: 100%;
     font-size: 12px;
-    color: #A2A4AF;
-    font-weight: bold;
-}
-main .profile-info .action-number .num{
-    font-size: 13px;
-    color: #69C5DB;
-}
-main .profile-info button{
-    color: #69C5DB;
-    border:2px solid #69C5DB;
-    background-color: #F6F7FD;
-    border-radius: 15px; 
-    padding:5px;  
-    font-weight: bold;
-}
-main .posts{
-    max-width: 55rem;
-}
-main .posts header{
+  }
+  .posts .post-something {
+    position: relative;
+    width: 80%;
+  }
+  .posts .post-something i {
+    top: 9px;
+    right: 23px;
+    font-size: 15px;
+  }
+  .posts main article .fa-circle {
+    font-size: 50%;
+  }
+  .posts .post-something {
+    max-width: 90%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding:10px;
-    background-color: #F6F7FD;
-}
-main .posts header img{
-    max-width: 5%;
-    border-radius: 50%;
-}
-main .posts header .post{
-    width:25rem;
-    color:#69C5DB;
-}
-.post .fa {
-    position: absolute;
-    top: 0.4rem;
-    left: 23rem;
-}
-main .posts header input{
-    margin-left:20px;
-    width:100%;
-    color: #69C5DB;
-    box-shadow: 0px 0px 5px 1px lightgray;
-    background-color: white;
+    justify-content: flex-end;
+  }
+  .posts main article {
+    padding: 1rem;
+    min-height: 7rem;
+    font-size: 0.875rem;
+  }
 }
