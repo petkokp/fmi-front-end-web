@@ -10,26 +10,29 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+      <ui5-shellbar
+        id="shellbar"
+        primary-title="Meal List"
+        show-notifications
+        show-product-switch
+        show-co-pilot
+      >
+      </ui5-shellbar>
+    </header>
+    <div class="filters">
+      <ui5-input class="filter" id="by-name" placeholder="Filter by name"></ui5-input>
+      <ui5-input class="filter" id="by-region" placeholder="Filter by region"></ui5-input>
+      <ui5-input class="filter" id="by-category" placeholder="Filter by category"></ui5-input>
+    </div>
 
-    <ui5-list>
-      <ui5-input placeholder="Filter by name"></ui5-input>
-      <ui5-input placeholder="Filter by region"></ui5-input>
-      <ui5-input placeholder="Filter by category"></ui5-input>
-    </ui5-list>
-    <ui5-list class="full-width" growing="Scroll" id="meals-list"></ui5-list>
+    <div class="meals-list-wrapper">
+      <ui5-list class="meals-list" growing="Scroll" id="meals-list"></ui5-list>
+    </div>
 
-    <ui5-button id="openDialogButton"
-      >Open Dialog</ui5-button
-    >
+    <ui5-dialog id="additional-info-dialog"> </ui5-dialog>
 
-    <ui5-dialog id="hello-dialog" header-text="Test">
-      <div slot="footer"	class="dialog-footer">
-        <div style="flex: 1;"></div>
-        <ui5-button id="closeDialogButton">Close</ui5-button>
-      </div>
-    </ui5-dialog>
-
-    <script src="./triggers/click.list.item.js"></script>
-    <script src="./components/dialog.js" type="module"></script>
+    <script src="./scripts/click.list.item.js" type="module"></script>
+    <script src="./scripts/search.recipes.js" type="module"></script>
   </body>
 </html>
