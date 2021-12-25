@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="web.components.js" type="module"></script>
-    <script src="./use-cases/get.recipes.js" type="module"></script>
+    <script src="./scripts/get.recipes.js" type="module"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,17 +20,18 @@
       >
       </ui5-shellbar>
     </header>
+    
     <div class="filters">
-      <ui5-input class="filter" id="by-name" placeholder="Filter by name"></ui5-input>
-      <ui5-input class="filter" id="by-region" placeholder="Filter by region"></ui5-input>
-      <ui5-input class="filter" id="by-category" placeholder="Filter by category"></ui5-input>
+      <ui5-input class="filter" id="name" placeholder="Filter by name"></ui5-input>
+      <ui5-input class="filter" id="region" placeholder="Filter by region"></ui5-input>
+      <ui5-input class="filter" id="category" placeholder="Filter by category"></ui5-input>
     </div>
 
     <div class="meals-list-wrapper">
       <ui5-list class="meals-list" growing="Scroll" id="meals-list"></ui5-list>
     </div>
 
-    <ui5-dialog id="additional-info-dialog"> </ui5-dialog>
+    <ui5-dialog id="additional-info-dialog"></ui5-dialog>
 
     <script src="./scripts/click.list.item.js" type="module"></script>
     <script src="./scripts/search.recipes.js" type="module"></script>
